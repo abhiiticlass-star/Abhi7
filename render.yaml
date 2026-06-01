@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: abhi-algo-v10
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
